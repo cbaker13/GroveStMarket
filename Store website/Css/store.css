@@ -1,5 +1,49 @@
 body {
-  background-color:  yellow;
-  background: url(../img/gg.jpg);
-  background-repeat: no-repeat, repeat;
+	width: 80%;
+	margin: auto;
+}
+
+#black {
+	margin-top: 2%;
+	background-color: black;
+	width: 98%;
+	padding: 1%;
+
+}
+
+#blue {
+	background-color: skyblue;
+	width: 80%;
+	padding: 10%;
+	margin-top:2%;
+	float: left;
+	
+}
+
+#orange {
+	background-color: orange;
+	width: 28%;
+	padding: 10%;
+	margin-top:2%;
+	float: left;
+	
+}
+
+#green {
+	background-color: green;
+	width: 28%;
+	padding: 10%;
+	margin-top:2%;
+	float: right;
+
+}
+
+#sblack {
+	background-color: black;
+	width: 98%;
+	padding: 1%;
+	margin-top:2%;
+	float: right;
+
+}
 }
