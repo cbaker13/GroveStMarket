@@ -13,23 +13,40 @@ body {
 
 }
 
-#orange {
+#groceries {
 	background-color: skyblue;
-	width: 80%;
-	padding: 10%;
+	width: 90%;
+	padding: 5%;
 	margin-top:2%;
 	float: left;
 	
 }
 
-#green {
-	background-color: green;
-	width: 28%;
-	padding: 10%;
+#deli {
+	background-color: skyblue;
+	width: 90%;
+	padding: 5%;
 	margin-top:2%;
-	float: right;
+	float: left;
+}
+
+#liquor {
+	background-color: skyblue;
+	width: 90%;
+	padding: 5%;
+	margin-top:2%;
+	float: left;
+}
+
+#cigarettes {
+	background-color: skyblue;
+	width: 90%;
+	padding: 5%;
+	margin-top:2%;
+	float: left;
 
 }
+
 
 #sblack {
 	background-color: black;
