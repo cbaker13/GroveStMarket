@@ -1,0 +1,5 @@
+body {
+  background-color:  yellow;
+  background: url(../img/gg.jpg);
+  background-repeat: no-repeat, repeat;
+}
