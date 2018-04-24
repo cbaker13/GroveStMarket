@@ -1,13 +1,15 @@
 body {
+
 	width: 80%;
 	margin: auto;
+	background-color: #FFFBEB;
 }
 
-#black {
+#blue {
 	margin-top: 2%;
-	background-color: black;
-	width: 98%;
-	padding: 1%;
+	background-color: #A7D2CB;
+	width: 94%;
+	padding: 3%;
 
 }
 
