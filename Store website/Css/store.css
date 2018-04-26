@@ -7,22 +7,38 @@
 h1{
 	font-family: 'Alegreya Sans', sans-serif;
 	font-size: 40px;
-	color: #874C62
+	color: #874C62;
+}
+
+h2 {
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 50px;
+	color: #874C62;
+	text-align: right;
+	margin-right: 200px;
 }
 
 ul{
 	margin: 1%;
+	
+	}
+
+li {
 	display: inline;
 	font-family: 'Palanquin', sans-serif;
-	font-size: 30px;
+	padding: 60px;
+	font-size: 20px;
 	color: white;
+	
+}
+
 }
 
 main{
 	overflow: auto;
 }
 
-nav, {
+nav {
 	margin: 1%;
 	background-color: #A7D2CB;
 	border-radius: 10px;
@@ -44,30 +60,30 @@ body {
 }
 
 
+
 #blue {
 	margin-top: 2%;
 	background-color: #A7D2CB;
-	width: 94%;
-	padding: 3%;
+	padding: 1%;
+	width: 98%;
+	
 
 
 }
 
 #groceries {
 	background-color: skyblue;
-	width: 90%;
-	padding: 5%;
+	width: 98%;
+	padding: 1%;
+	font-size: 90pt;
 	margin-top:2%;
 	float: left;
-	text-align: right;
-
-	
 }
 
 #deli {
 	background-color: skyblue;
-	width: 90%;
-	padding: 5%;
+	width: 98%;
+	padding: 1%;
 	margin-top:2%;
 	float: left;
 	text-align: right;
@@ -75,8 +91,8 @@ body {
 
 #liquor {
 	background-color: skyblue;
-	width: 90%;
-	padding: 5%;
+	width: 98%;
+	padding: 1%;
 	margin-top:2%;
 	float: left;
 	text-align: right;
@@ -84,8 +100,8 @@ body {
 
 #cigarettes {
 	background-color: skyblue;
-	width: 90%;
-	padding: 5%;
+	width: 98%;
+	padding: 1%;
 	margin-top:2%;
 	float: left;
 	text-align: right;
@@ -100,8 +116,5 @@ body {
 	float: right;
 	text-align: right;
 }
-.groceries {
 
-	position: relative;
-}
-}
+
