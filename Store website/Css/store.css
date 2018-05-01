@@ -1,120 +1,119 @@
-* {
-	font-family: 'Palanquin', sans-serif;
-	color: #C98474;
-	text-align: center;
-}
-
-h1{
+h1 {
 	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 40px;
+	font-size: 65px;
 	color: #874C62;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
 }
 
-h2 {
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 50px;
-	color: #874C62;
-	text-align: right;
-	margin-right: 200px;
-}
-
-ul{
+ul {
 	margin: 1%;
-	
-	}
-
-li {
 	display: inline;
 	font-family: 'Palanquin', sans-serif;
-	padding: 60px;
-	font-size: 20px;
-	color: white;
-	
+	font-size: 25px;
+	color: #FFFFFF;
+	font-weight: bold;
 }
 
-}
-
-main{
+main {
 	overflow: auto;
+	margin-bottom: 30px;
 }
 
 nav {
 	margin: 1%;
 	background-color: #A7D2CB;
-	border-radius: 10px;
-	border: 5px solid #5DB1A3;
-}
+	border: 2px solid #5DB1A3;
+	color: white;
 
-.column1, .column2, .column3 {
-	margin: 1%;
-	width: 90%;
-	float: left;
 }
-
 
 body {
-
-	width: 80%;
+	width: 90%;
 	margin: auto;
-	text-align: left;
 	background-color: #FFFBEB;
+	box-sizing: border-box;
+	font-color: #874C62;
 }
 
+a.class1 {
+	color: white;
+	text-decoration: none;
+}
 
+a.class2 {
+	color:#874C62;
+	text-decoration: none;
+}
 
-#blue {
-	margin-top: 2%;
-	background-color: #A7D2CB;
-	padding: 1%;
-	width: 98%;
-	
-
-
+a.class3 {
+	color:none;
+	text-decoration: none;
 }
 
 #groceries {
-	background-color: skyblue;
-	width: 98%;
+	background-color: white;
+	border: 5px solid #874C62;
+	width: 97%;
 	padding: 1%;
-	font-size: 90pt;
-	margin-top:2%;
-	float: left;
+	margin-top: 2%;
+	float: center;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #874C62;
+	font-size: 50px;
+	font-weight: 800;
+	text-align: center;
+	background: url(../images/groceries.png);
+	background-size: 700px;
+
 }
 
 #deli {
-	background-color: skyblue;
-	width: 98%;
+	background-color: white;
+	border: 5px solid #874C62;
+	width: 97%;
 	padding: 1%;
 	margin-top:2%;
-	float: left;
-	text-align: right;
+	float: center;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #874C62;
+	font-size: 50px;
+	font-weight: 800;
+	text-align: center;
+	background: url(../images/delicounter.png);
+	background-size: 700px;
 }
 
 #liquor {
-	background-color: skyblue;
-	width: 98%;
+	background-color: white;
+	border: 5px solid #874C62;
+	width: 97%;
 	padding: 1%;
 	margin-top:2%;
-	float: left;
-	text-align: right;
+	float: center;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #874C62;
+	font-size: 50px;
+	font-weight: 800;
+	text-align: center;
+	background: url(../images/shelfliquor.png);
+	background-size: 500px;
 }
 
 #cigarettes {
-	background-color: skyblue;
-	width: 98%;
+	background-color: white;
+	border: 5px solid #874C62;
+	width: 97%;
 	padding: 1%;
 	margin-top:2%;
-	float: left;
-	text-align: right;
+	float: center;
+	font-family: 'Alegreya Sans', sans-serif;
+	color: #874C62;
+	font-size: 50px;
+	font-weight: 800;
+	text-align: center;
+	background: url(../images/cigarettesshelf.png);
+	background-size: 300px;
+
 }
-
-
-#sblack {
-	background-color: black;
-	width: 98%;
-	padding: 1%;
-	margin-top:2%;
-	float: right;
-	text-align: right;
-}
-
