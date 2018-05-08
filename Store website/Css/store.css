@@ -32,6 +32,7 @@ ul {
 main {
 	overflow: auto;
 	margin-bottom: 30px;
+	float: center;
 }
 
 span{
@@ -162,7 +163,7 @@ img{
 #groceries {
 	background-color: white;
 	border: 5px solid #874C62;
-	width: 97%;
+	width: 95%;
 	padding: 1%;
 	margin-top: 2%;
 	float: center;
@@ -173,12 +174,13 @@ img{
 	text-align: center;
 	background: url(../images/groceries.png);
 	background-size: 700px;
+
 }
 
 #deli {
 	background-color: white;
 	border: 5px solid #874C62;
-	width: 97%;
+	width: 95%;
 	padding: 1%;
 	margin-top:2%;
 	float: center;
@@ -189,12 +191,13 @@ img{
 	text-align: center;
 	background: url(../images/sandwiches01.png);
 	background-size: 700px;
+
 }
 
 #liquor {
 	background-color: white;
 	border: 5px solid #874C62;
-	width: 97%;
+	width: 95%;
 	padding: 1%;
 	margin-top:2%;
 	float: center;
@@ -210,7 +213,7 @@ img{
 #cigarettes {
 	background-color: white;
 	border: 5px solid #874C62;
-	width: 97%;
+	width: 95%;
 	padding: 1%;
 	margin-top:2%;
 	float: center;
