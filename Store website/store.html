@@ -8,23 +8,33 @@
 
  <body>	
  	<header>
- 	<h1><img width="200" src="images/marketlogo.png">Grove Street Market
- 		<img width="250" src="images/DES 327 Website address.png">
+ 		<h1 align="center">
+ 		<img width="200" src="images/marketlogo.png" align="left">
+ 		Grove Street Market
+ 		<img width="250" src="images/DES 327 Website address.png" align="right">
+		</h1>
+  	</header> 
 
- 	</h1>
-    
-	<nav>
-	<ul>
-		<ul><a href="" class="class1">Home</a></ul>
-		<ul><a href="" class="class1">Groceries</a></ul>
-		<ul><a href="" class="class1">Deli</a></ul>
-		<ul><a href="" class="class1">Liquor</a></ul>
-		<ul><a href="" class="class1">Cigarettes</a></ul>
-		<ul><a href="" class="class1">Contact Us</a></ul>
-	</ul>
-	</nav>
- </header>
+  <div class="topnav" id="myTopnav">
+  <a href="" class="active">Home</a>
+  <a href="">Groceries</a>
+  <a href="">Deli</a>
+  <a href="">Liquor</a>
+  <a href="">Cigarettes</a>
+  <a href="">Contact Us</a>
+  <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
 
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 	<main>
 			<div id="groceries"><a href="" class="class2">
 				<p>Groceries</p></a>
@@ -41,6 +51,7 @@
 			<div id="cigarettes"><a href="" class="class2">
 				<p>Cigarettes</p></a>
 			</div>
+
 
 	</body>
 
