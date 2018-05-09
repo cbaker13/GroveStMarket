@@ -132,6 +132,8 @@ a.class3 {
 }
 
 .flex-containertext {
+
+	
 	display: inline-flex;
 	flex-wrap: wrap;
 	flex-flow: row wrap;
@@ -160,6 +162,19 @@ img{
   height: auto;
 }
 
+#blue {
+
+	background-color: skyblue;
+
+	width: 80%;
+
+	padding: 10%;
+
+	margin-top:2%;
+
+	float: left;
+
+}
 #groceries {
 	background-color: white;
 	border: 5px solid #874C62;
