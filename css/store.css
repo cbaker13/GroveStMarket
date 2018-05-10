@@ -315,8 +315,13 @@ img{
   align-content: center;
 }
 
-.flex-container:hover .overlay,  .flex-container:active .overlay {
+.flex-container:hover .overlay,  .flex-container:hover_effect .overlay {
   opacity: 1;
+}
+
+.hover {
+-webkit-user-select: none;
+-webkit-touch-callout: none;        
 }
 
 .text {
@@ -626,6 +631,14 @@ img{
 	font-family: 'Alegreya Sans', sans-serif;
 	font-size: 50;
 	}
+
+$(document).ready(function() {
+    $('.hover').bind('touchstart touchend', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
+});
+
 © 2018 GitHub, Inc.
 Terms
 Privacy
