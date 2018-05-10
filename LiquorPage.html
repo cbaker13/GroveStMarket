@@ -36,20 +36,14 @@ function myFunction() {
 }
 </script>
 
-<script>
-function on() {
-    document.getElementById("overlay").style.display = "block";
+if (!("ontouchstart" in document.documentElement)) {
+    document.documentElement.className += " no-touch";
 }
-
-function off() {
-    document.getElementById("overlay").style.display = "none";
-}
-</script>
 	 
  <main>
  	<h2>Liquor</h2>
  		<div id="feature" class="flex-container">
-		<div onclick= "overlay"><img width="170" src="images/andreAsset.png" class="image">
+		<div ontouchstart= "overlay"><img width="170" src="images/andreAsset.png" class="image">
 		<div class="overlay">
 		<div class="text">André Extra Dry<br/>
 				  $4.27</div></div>
@@ -57,71 +51,71 @@ function off() {
 			
 		</div>
 
-		<div onclick="overlay"><img width="170" src="images/AngryOrchardAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/AngryOrchardAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Angry Orchard Hard Cider Crisp Apple-12 Pack<br/>
 							  $13.96</div>
 			</div>
 			</div>
 
-		<div onclick="overlay"><img width="170" src="images/BudLightAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/BudLightAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Bud Light-8 pack 16 oz<br/>
 							  $7.99</div>
 			</div>
 			</div>
 
-		<div onclick="overlay"><img width="170" src="images/BudweiserAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/BudweiserAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Budweiser Light-12 pack 12 oz<br/>
 							  $9.67</div>
 			</div>
 			</div>
 
-		<div onclick="overlay"><img width="170" src="images/butterwineAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/butterwineAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Butter Chardonnay<br/>
 							  $13.49</div>
 			</div>
 			</div>
-		<div onclick="overlay"><img width="170" src="images/CoorsAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/CoorsAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Coors Light-12 pack 12 oz<br/>
 							  $7.75</div>
 			</div>
 			</div>
-		<div onclick="overlay"><img width="170" src="images/CoronaAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/CoronaAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Corona Light- 6 pack 12 oz<br/>
 							  $8.47</div>
 			</div>
 			</div>
-		<div onclick="overlay"><img width="170" src="images/joshwineAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/joshwineAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Josh Cellar Wine<br/>
 							  $12.99</div>
 			</div>
 			</div>
 
-		<div onclick="overlay"><img width="170" src="images/menageatroisAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/menageatroisAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Menage a Trois Wine<br/>
 							  $10.99</div>
 			</div>
 			</div>
-		<div onclick="overlay"><img width="170" src="images/MillerAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/MillerAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Miller Light-12 Pack 12 oz<br/>
 								  $12.10</div>
 			</div>
 			</div>
-		<div onclick="overlay"><img width="170" src="images/roscatoAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/roscatoAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Roscato Dolce Wine <br/>
 								  $9.99</div>
 			</div>
 			</div>
-		<div onclick="overlay"><img width="170" src="images/sutterhomeAsset.png" class="image">
+		<div ontouchstart="overlay"><img width="170" src="images/sutterhomeAsset.png" class="image">
 			<div class="overlay">
 			<div class="text">Sutter Home Moscato<br/>
 								$4.99</div>
