@@ -315,7 +315,7 @@ img{
   align-content: center;
 }
 
-.flex-container:hover .overlay,  .flex-container:hover_effect .overlay {
+.flex-container:hover .overlay,  .flex-container.hover_effect .overlay {
   opacity: 1;
 }
 
