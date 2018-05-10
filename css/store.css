@@ -32,7 +32,7 @@ ul {
 main {
 	overflow: auto;
 	margin-bottom: 30px;
-	float: center;
+	float: left;
 }
 
 span{
