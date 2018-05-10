@@ -31,8 +31,11 @@ ul {
 
 main {
 	overflow: auto;
-	margin-bottom: 30px;
 	float: left;
+	width: 90%;
+	margin: auto;
+	
+	
 }
 
 span{
