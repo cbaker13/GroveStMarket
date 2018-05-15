@@ -1,0 +1,58 @@
+<html>
+  <head>
+   <title>Grove Street Market</title>
+   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700,800|Palanquin:400,500,700" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/store.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+ <body> 
+  <header>
+    <h1 align="center">
+    <img width="200" src="images/marketlogo.png" align="left">
+    Grove Street Market
+    <img width="250" src="images/DES 327 Website address.png" align="right">
+    </h1>
+    </header> 
+
+  <div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="Grocery.html">Groceries</a>
+  <a href="GSM.html">Deli</a>
+  <a href="LiquorPage.html">Liquor</a>
+  <a href="cigarette.html">Cigarettes</a>
+  <a href="ContactUsPage.html">Contact Us</a>
+  <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+<main>
+  <h2>Contact Us</h2>
+
+  <div id="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5240684822284!2d-122.42725808533669!3d37.777756319762226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580a289576c2d%3A0x622853544f135aa!2s500+Grove+St%2C+San+Francisco%2C+CA+94102!5e0!3m2!1sen!2sus!4v1525769314273" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+<p class="contacthead">Address<br/>
+  <span class="contactreg">500 Grove Street<br/>
+                      San Francisco, CA, 94102</span></p>
+
+<p class="contacthead">Store Hours<br/>
+  <span class="contactreg">Open Everyday 8am-9pm<br/>
+                           Deli Closed Sundays</span></p>
+
+<p class="contacthead">Phone Number<br/>
+  <span class="contactreg">(415) 861-2293</span></p>
+
+
+</main></body>
