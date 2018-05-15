@@ -1,4 +1,6 @@
-
+*{
+	box-sizing: border-box;
+}
 
 h1 {
 	font-family: 'Alegreya Sans', sans-serif;
@@ -56,7 +58,7 @@ body {
 	font-color: #874C62;
 }
 
-p.liquor {
+p {
 	font-family: 'Palanquin', sans-serif;
 	font-weight: 500px;
 	color: #C98474;
@@ -103,61 +105,87 @@ a.class3 {
 
 .flex-container {
 	display: flex;
-	flex-wrap: wrap;
 	background-color: white;
 	box-sizing: border-box;
 	flex-flow: row wrap;
 	margin: auto;
+	width: 80%;
 
 }
 
 .flex-container > div {
-	max-width: 15%;
-	margin: 10px;
-	text-align: center;
+	max-width: 80%;
+	margin: 7px;
 	border: 3px solid #874C62;
-	align-items: flex-end;
-	display: flex;
-	position: relative;
+	vertical-align: text-bottom;
+	bottom: 0 auto;
+}
 
-}
-#bottomtext {
-    position:absolute;
-    bottom:0;
-}
 
 #feature, article {
 	background-color: #FFFBEB;
 
 }
 
-.flex-containertext {
-	display: inline-flex;
-	flex-wrap: wrap;
-	flex-flow: row wrap;
-}
-
-.flex-containertext > div {
-	overflow: auto;
-	width: 15%;
-	margin: 10px;
-	text-align: center;
-	align-items: flex-end;
-	display: flex;
-	justify-content: center;
-	vertical-align: top;
-
-}
 
 img{
 	max-height: 100%;
-	max-width:100%;
+	max-width: 100%;
 }
 
-.image {
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+.column{
+	flex: 25%;
+	max-width: 25%;
+	padding: 0;
+}
+
+.column img{
+	vertical-align: left;
+}
+
+@media (max-width: 800px) {
+	.column {
+		flex: 50%;
+		max-width: 50%
+	}
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.text {
+	font-family: 'Palanquin', sans-serif;
+	font-weight: 500px;
+	color: #C98474;
+	font-size: 20px;
+	vertical-align: text-bottom;
+	display: inline-flex;
+	text-align: center;
+
+}
+
+.grid-item {
+	display: block;
+	width: 100%;
+	align-items: baseline;
+	background-color: white;
+	text-align: center;
+}
+
+.image{
   display: block;
   width: 100%;
-  height: auto;
+  align-content: center;
 }
 
 #blue {
@@ -182,7 +210,7 @@ img{
 	float: center;
 	font-family: 'Alegreya Sans', sans-serif;
 	color: #874C62;
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 800;
 	text-align: center;
 	background: url(../images/groceries.png);
@@ -199,7 +227,7 @@ img{
 	float: center;
 	font-family: 'Alegreya Sans', sans-serif;
 	color: #874C62;
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 800;
 	text-align: center;
 	background: url(../images/sandwiches01.png);
@@ -216,7 +244,7 @@ img{
 	float: center;
 	font-family: 'Alegreya Sans', sans-serif;
 	color: #874C62;
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 800;
 	text-align: center;
 	background: url(../images/shelfliquor.png);
@@ -232,7 +260,7 @@ img{
 	float: center;
 	font-family: 'Alegreya Sans', sans-serif;
 	color: #874C62;
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 800;
 	text-align: center;
 	background: url(../images/cigarettesshelf.png);
@@ -283,7 +311,7 @@ img{
   display: none;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1230px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -291,7 +319,7 @@ img{
   }
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1230px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -305,27 +333,6 @@ img{
   }
 }
 
-.overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #FFFFFF;
-  align-content: center;
-}
-
-.flex-container:hover .overlay,  .flex-container:active .overlay {
-  opacity: 1;
-}
-
-.text {
-	font-family: 'Palanquin', sans-serif;
-	font-weight: 500px;
-	color: #C98474;
-	text-align: center;
-	font-size: 1.5vw;
-}
 
 .menuA {
 	width: 95%;
@@ -338,884 +345,22 @@ img{
 	
 }
 
-@media only screen and (max-width : 1260px) {
+@media only screen and (max-width : 1230px) {
 
 	header {
 		position: absolute;
 		display: none;}
 	}
 
-
-#cigbox1 {
-    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	background-image: url(../images/mcrush.jpg);
-	 background-size: 90%;
-	 background-repeat: no-repeat;
-	 color: #874C62;
-	font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-
-
-}
-
-#cigbox2 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	background-image: url(../images/red.jpg);
-	 background-size:90%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-
-
-}
-
-#cigbox3 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/silver.jpg);
-	 background-size: 90%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-
-}
-
-
-#cigbox4 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/gold.jpg);
-	 background-size: 90%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-
-}
-
-#cigbox5 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/crush.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#cigbox6 {
-    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/ccamel.jpg);
-	 background-size: 90%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#cigbox7 {
-    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/blue.jpg);
-	 background-size: 90%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#cigbox8 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/gcamel.jpg);
-	 background-size: 90%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#cigbox9 {
-    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/sky.jpg);
-	 background-size: 90%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#cigbox10 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/greens.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#cigbox11 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	  background-image: url(../images/yellow.jpg);
-	 background-size: 90%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#cigbox12 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/par.jpg);
-	 background-size: 90%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#cigbox13 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/kool.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#cigbox14 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/luckystrike.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#cigbox15 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/newport.jpg);
-	 background-size: 90%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#cigbox16 {
-     background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/pall.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#g1 {
-	background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	margin-top: 5%;
-	background-image: url(../images/water.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-	font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#g2 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/mate.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#g3 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/snapple.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#g4 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/redbull.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g5 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/monster.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#g6 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/rice.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g7 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/resses.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g8 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/total.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 30;
-	}
-
-	#g3 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/twinkie.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g9 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/pay.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g10 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/mm.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g11 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/lucky.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g12 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/lay.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g13 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/kerns.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g14 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/ice.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 30;
-	}
-
-	#g15 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/froot.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g16 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/ding.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#g17 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/cheer.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#g18 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/cake.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 30;
-	}
-
-
-	#g19 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/bubba.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#g20 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/snapple.jpg);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#g21 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/cmilk.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#liqbox1 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/andreAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-
-	#liqbox2 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/AngryOrchardAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#liqbox3 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/Bud.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#liqbox4 {
-	background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/BudweiserAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#liqbox5 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/butterwineAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#liqbox6 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/CoorsAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#liqbox7 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/CoronaAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#liqbox8 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/joshwineAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#liqbox9 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/menageatroisAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#liqbox10 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/MillerAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#liqbox11 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/roscatoAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
-	#liqbox12 {
-		    background-color: white;
-	height: 220px;
-	width: 220px;
-	margin:20px;
-	border: 5px solid #874C62;
-	color: #874C62;
-	float: left;
-	 margin-top: 5%;
-	 background-image: url(../images/sutterhomeAsset.png);
-	 background-size: 100%;
-	 background-repeat: no-repeat;
-	 font-weight: 800;
-	font-family: 'Alegreya Sans', sans-serif;
-	font-size: 31;
-	}
-
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
