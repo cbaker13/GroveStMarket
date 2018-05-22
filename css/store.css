@@ -170,6 +170,7 @@ img{
 	vertical-align: text-bottom;
 	display: inline-flex;
 	text-align: center;
+	padding-top: 10px;
 
 }
 
@@ -179,6 +180,8 @@ img{
 	align-items: baseline;
 	background-color: white;
 	text-align: center;
+	padding: 15px;
+	min-height: 320px;
 }
 
 .image{
